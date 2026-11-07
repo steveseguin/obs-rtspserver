@@ -77,8 +77,8 @@ string AACSource::GetAttribute()  // RFC 3640
 			"a=fmtp:97 profile-level-id=1;"
 			"mode=AAC-hbr;"
 			"sizelength=13;indexlength=3;indexdeltalength=3;"
-			"config=%04u",
-			atoi(config));
+			"config=%s",
+			config);
 
 	return string(buf);
 }
